@@ -1,4 +1,4 @@
-name: box-goapp
+name: goapp
 version: 0.0.1
 inherits: wercker/golang@1.2.0
 type: main
