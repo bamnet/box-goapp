@@ -1,5 +1,5 @@
 name: goapp
-version: 0.0.1
+version: 0.0.2
 inherits: wercker/golang@1.2.0
 type: main
 platform: ubuntu@12.04
@@ -18,6 +18,7 @@ script: |
 
   wget https://storage.googleapis.com/appengine-sdks/featured/go_appengine_sdk_linux_amd64-${version}.zip
   sudo unzip go_appengine_sdk_linux_amd64-${version}.zip -d /usr/local
+  sudo chmod -R a+rx /usr/local/go_appengine
   echo "export PATH=$PATH:/usr/local/go_appengine" | sudo tee -a /etc/profile
   rm go_appengine_sdk_linux_amd64-${version}.zip
 
