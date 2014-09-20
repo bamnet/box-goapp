@@ -11,9 +11,9 @@ keywords:
   - gae
   - go_appengine
 packages:
-  - go_appengine@1.9.9
+  - go_appengine@1.9.11
 script: |
-  version="1.9.9"
+  version="1.9.11"
 
   sudo apt-get update
   sudo apt-get install unzip
